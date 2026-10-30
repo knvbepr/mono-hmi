@@ -1,5 +1,7 @@
 # MONO-HMI
 
+Version 1.5.0 · Author: knvbepr · Default panel port: 51737.
+
 The standalone UI design language and specimen for **PANELINK**: a pure-black,
 hairline, zero-radius industrial HMI.
 
