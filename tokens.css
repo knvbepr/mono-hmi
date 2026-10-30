@@ -1,0 +1,17 @@
+:root {
+  --bg: #000000;
+  --fg: #ffffff;
+  --fg-60: rgba(255,255,255,.60);
+  --fg-30: rgba(255,255,255,.30);
+  --line: rgba(255,255,255,.20);
+  --ok: #00C853;
+  --warn: #FFB000;
+  --fault: #FF1744;
+  --digit-font: "DSEG7 Classic", monospace;
+  --label-font: "JetBrains Mono", monospace;
+  --cjk-font: "WenQuanYi Bitmap Song 16px", monospace;
+  --unit: 16px;
+  --gap: 8px;
+  --stroke: 1px;
+  --radius: 0;
+}

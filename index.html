@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MONO-HMI — PANELINK design language</title>
+<style>
+:root{--bg:#000;--fg:#fff;--line:rgba(255,255,255,.2);--ok:#00C853;--warn:#FFB000;--fault:#FF1744}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:14px/1.6 "JetBrains Mono",monospace}
+header{padding:32px 24px;border-bottom:1px solid var(--line)}
+h1{font-size:28px;margin:0 0 8px;letter-spacing:.08em}
+h2{font-size:16px;margin:0 0 16px;font-weight:400;color:rgba(255,255,255,.6);letter-spacing:.18em}
+p{color:rgba(255,255,255,.6);max-width:72ch}
+main{padding:24px;display:grid;gap:24px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+.card{border:1px solid var(--line);padding:16px;background:#000}
+.card h3{margin:0 0 8px;font-size:13px;color:rgba(255,255,255,.6);font-weight:400;letter-spacing:.12em}
+.swatch{height:48px;border:1px solid var(--line);margin-bottom:8px}
+.row{display:flex;justify-content:space-between;border-bottom:1px solid var(--line);padding:8px 0;color:rgba(255,255,255,.6)}
+.row b{color:#fff;font-weight:400}
+img{max-width:100%;display:block;border:1px solid var(--line)}
+code{color:var(--ok)}
+</style>
+</head>
+<body>
+<header>
+  <h1>MONO-HMI</h1>
+  <h2>PANELINK DESIGN LANGUAGE / 01—07</h2>
+  <p>Pure black, white hairlines, zero radius, DSEG digits, JetBrains Mono labels, 16px
+  pixel Song Chinese. Status colors are reserved for OK, caution and fault.</p>
+</header>
+<main>
+  <section class="grid">
+    <div class="card"><h3>TOKENS / COLOR</h3>
+      <div class="swatch" style="background:#000"></div><div class="row"><span>background</span><b>#000000</b></div>
+      <div class="swatch" style="background:#fff"></div><div class="row"><span>foreground</span><b>#FFFFFF</b></div>
+      <div class="row"><span>OK</span><b style="color:#00C853">#00C853</b></div>
+      <div class="row"><span>CAUTION</span><b style="color:#FFB000">#FFB000</b></div>
+      <div class="row"><span>FAULT</span><b style="color:#FF1744">#FF1744</b></div>
+    </div>
+    <div class="card"><h3>TOKENS / TYPE</h3>
+      <div class="row"><span>digit</span><b>DSEG7 Classic</b></div>
+      <div class="row"><span>label</span><b>JetBrains Mono</b></div>
+      <div class="row"><span>Chinese</span><b>WenQuanYi Bitmap Song 16px</b></div>
+      <div class="row"><span>base</span><b>16px, integer multiples</b></div>
+    </div>
+    <div class="card"><h3>TOKENS / MOTION</h3>
+      <div class="row"><span>fault blink</span><b>0.5s phase, continuous</b></div>
+      <div class="row"><span>radius</span><b>0</b></div>
+      <div class="row"><span>hairline</span><b>1px, no AA</b></div>
+    </div>
+  </section>
+  <section>
+    <h2>REMOTE PC PANEL / ANDROID 13</h2>
+    <img src="docs/remote-panel.png" alt="remote panel">
+  </section>
+  <section class="grid">
+    <div><h2>LOCAL / A13</h2><img src="docs/remote-a13.png" alt="panel"></div>
+    <div><h2>SETTINGS</h2><img src="docs/settings-large.png" alt="settings"></div>
+  </section>
+</main>
+</body>
+</html>
