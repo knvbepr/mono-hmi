@@ -13,7 +13,8 @@ specimens. The implementation lives in the PANELINK Android project.
 - Digits use DSEG7; Latin labels use JetBrains Mono; Chinese uses **WenQuanYi Bitmap
   Song 16px** at integer pixel multiples (16/32/48).
 - Status colours: OK `#00C853`, caution `#FFB000`, fault `#FF1744`.
-- Fault state blinks continuously with a 0.5 s phase.
+- Temperature warning uses amber `#FFB000`; alarm uses red `#FF1744`; both thresholds
+  are adjustable. Fault state blinks continuously with a 0.5 s phase.
 - Numeric columns are fixed and right-aligned so changing digit count never shifts
   neighbouring controls.
 
