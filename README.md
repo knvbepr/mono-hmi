@@ -31,5 +31,6 @@ specimens. The implementation lives in the PANELINK Android project.
 
 - `docs/remote-panel.png` — remote PC telemetry (multi-GPU, multi-disk, battery)
 - `docs/remote-a13.png` — local panel on Android 13
+- `docs/960x540.png` — 960x540 layout check
 - `docs/settings-large.png` — two-column settings with large touch targets
 - `docs/fault-solid.png` / `docs/fault-dim.png` — fault blink phases
