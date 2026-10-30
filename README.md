@@ -1,6 +1,6 @@
 # MONO-HMI
 
-Version 1.5.0 · Author: knvbepr · Default panel port: 51737.
+Version 1.5.2 · Author: knvbepr · Default panel port: 51737.
 
 The standalone UI design language and specimen for **PANELINK**: a pure-black,
 hairline, zero-radius industrial HMI.
@@ -36,3 +36,7 @@ specimens. The implementation lives in the PANELINK Android project.
 - `docs/960x540.png` — 960x540 layout check
 - `docs/settings-large.png` — two-column settings with large touch targets
 - `docs/fault-solid.png` / `docs/fault-dim.png` — fault blink phases
+
+## License
+
+Apache-2.0 for the original design/spec content; the PANELINK project license is in the main repository. Fonts and third-party components retain their own licences.
